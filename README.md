@@ -79,6 +79,8 @@ Please configure OAuth by referring to here.
 
 ```
 $ docker-compose -p p-share up -d
+
+$ docker exec -u 0 -it web bash -c "composer install"
 ```
 
 You can access to 

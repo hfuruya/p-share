@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  web:
+    container_name: web
+    build: ./web
+    volumes:
+      - ../:/var/www/server:delegated
+    restart: always
+    ports:
+      - "9081:80"
+    tty: true
