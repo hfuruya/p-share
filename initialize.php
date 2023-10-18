@@ -15,6 +15,8 @@ $authType = USER_TYPE_GENERAL;
 if (!empty($getParam['auth_code'])) {
     $authCode = $getParam['auth_code'];
     $authType = $authCode === AUTH_CODE_ADMIN ? USER_TYPE_ADMIN : USER_TYPE_GENERAL;    
+} else {
+    $getParam['auth_code'] = $authCode;
 }
 
 // current page
