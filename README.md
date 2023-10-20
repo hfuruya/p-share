@@ -66,7 +66,7 @@ define("VERSION", "202310150000");
 ```
 $ git clone this repository
 
-$ php composer install
+$ composer install
 ```
 
 Please configure OAuth by referring to here.
@@ -78,6 +78,8 @@ Please configure OAuth by referring to here.
 ### Only Local Dev
 
 ```
+$ cd docker
+
 $ docker-compose -p p-share up -d
 
 $ docker exec -u 0 -it web bash -c "composer install"
