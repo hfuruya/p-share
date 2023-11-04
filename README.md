@@ -43,9 +43,6 @@ define("MAX_UPLOAD_FILE_NUM", "5");
 // limit upload file size(MB) per file
 define("MAX_UPLOAD_SIZE_MB_PER_FILE", "50");
 
-// wait time when uploading
-define("MAX_WAIT_SECONDS", "10");
-
 // radomize auth code
 define("AUTH_CODE_ADMIN", "your_auth_code");
 
