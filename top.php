@@ -201,6 +201,8 @@ function getFromGoogleDrive($paramId, $authType, $paramAuthCode, $currentPage)
             $maxPageNum = round($filesNum / PER_PAGE) + 1;
         }
     }
+
+    if ($filesNum > 0) {
 ?>
     <div class="mb10">
         <?php echo $startOffset+1 ?>
@@ -212,7 +214,9 @@ function getFromGoogleDrive($paramId, $authType, $paramAuthCode, $currentPage)
                 }
             ?>
     </div>
-
+<?php
+    }
+?>
     <div class="mb10">
 <?php
     for ($i=0; $i<$maxPageNum; $i++) {
