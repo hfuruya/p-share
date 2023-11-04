@@ -110,8 +110,8 @@ include_once "templates/base.php";
             Here you will see a list of images that you have uploaded.<br />
             <br />
             ◆How to download<br />
-            　Smartphone：Please press and hold the image.<br />
-            　PC：Please right click.<br />
+            　Smartphone：Please press and hold the image and save.<br />
+            　PC：Please right click and save.<br />
             　※From <a href="https://drive.google.com/drive/folders/<?php echo DRIVE_ID ?>?usp=drive_link" target="_blank">Here</a>, you can full download.
         </div>
 
