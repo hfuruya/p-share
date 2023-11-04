@@ -76,9 +76,6 @@ for ($i=0; $i<count($uploadFiles['file']['name']); ++$i) {
 
     $uploadFile = $uploadDir . basename($uploadFiles['file']['name'][$i]);
 
-    $startMsec = time();
-    while (!file_exists($tmpPath) || time() - $startMsec < MAX_WAIT_SECONDS) {
-    }
     $fileSizeWithMB = filesize($tmpPath) / 1024 / 1024;
 
     if ($fileSizeWithMB > MAX_UPLOAD_SIZE_MB_PER_FILE) {
